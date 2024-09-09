@@ -1,0 +1,34 @@
+﻿<Window x:Class="WPF_New_Students.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Uniwersytet" Height="420" Width="640" WindowStartupLocation="CenterScreen" Background="PapayaWhip">
+    <Grid>
+        <Label Content="Dodawanie Studentów" HorizontalAlignment="Left" Margin="139,14,0,0" VerticalAlignment="Top" Width="418" FontSize="36" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="23,22,0,0" VerticalAlignment="Top" Width="100" Source="img/logo.png"/>
+        <Grid HorizontalAlignment="Left" Height="54" Margin="266,107,0,0" VerticalAlignment="Top" Width="120">
+            <Label x:Name="FNameLabel" Content="Imię" HorizontalAlignment="Left" Margin="34,0,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+            <TextBox x:Name="FNameTextBox" HorizontalAlignment="Center" Height="23" Margin="0,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="54" Margin="266,161,0,0" VerticalAlignment="Top" Width="120">
+            <Label x:Name="LNameLabel" Content="Nazwisko" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+            <TextBox x:Name="LNameTextBox" HorizontalAlignment="Center" Height="23" Margin="0,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="54" Margin="266,220,0,0" VerticalAlignment="Top" Width="120">
+            <Label x:Name="SemesterLabel" Content="Semestr" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+            <ComboBox x:Name="SemesterComboBox" HorizontalAlignment="Center" Margin="0,32,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0">
+                <ComboBoxItem Content="1"/>
+                <ComboBoxItem Content="2"/>
+                <ComboBoxItem Content="3"/>
+                <ComboBoxItem Content="4"/>
+                <ComboBoxItem Content="5"/>
+                <ComboBoxItem Content="6"/>
+                <ComboBoxItem Content="7"/>
+                <ComboBoxItem Content="8"/>
+            </ComboBox>
+        </Grid>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Center" Margin="0,331,0,0" VerticalAlignment="Top" Width="90" FontWeight="Bold" Height="35" Click="btnAdd_Click"/>
+    </Grid>
+</Window>
